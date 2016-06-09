@@ -1,5 +1,69 @@
-<?php
+body-wrapper{
+	position:relative;
+	width:100%;
+	height:100%;
+}
+.content-wrapper{
+	position:relative;
+	width:100%;
+	height:100%;
+}
+.header-desktop{
 
+    width: 100%;
+    height: 700px;
+    top: 0;
+    background: url('../images/golfipilt.jpg') 100% 100%;
+    background-size: cover;
+}
 
+ul.desktopmenyy{
+	display:inline-block;
+	margin-top:40px;
+	margin-right:0px;
 
- ?>
+}
+ul.desktopmenyy li a, ul.desktopmenyy li a:hover, ul.desktopmenyy li a:active,
+ul.desktopmenyy li a:visited, ul.lang-selector li a, ul.lang-selector li a:hover,
+ul.lang-selector li a:visited, ul.lang-selector li a:active {
+	color: #FFFFFF;
+	background: none;
+	text-decoration:none;
+}
+
+ul.lang-selector{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.meist-wrapper, .golfeesti-wrapper, .kultuurireisid-wrapper, .golfikeskused-wrapper, .kontakt-wrapper{
+	width:100%;
+	height:100%;
+	margin-bottom:40px;
+}
+.meist-wrapper .meist-content, .golfeesti-wrapper .golfeesti-content, .kultuurireisid-wrapper .kultuurireisid-content,
+.golfikeskused-wrapper .golfikeskused-content, .kontakt-wrapper .kontakt-content{
+	width:960px;
+	margin:0 auto;
+}
+.meist-wrapper .meist-content .text-col{
+
+}
+.sisu-pilt{
+	width:100%;
+}
+.navi-wrapper{
+	position: absolute;
+	top:0px;
+	right:20px;
+}
+ul{
+	list-style:none;
+}
+
+@media(max-width:768px){
+	.header-desktop{
+		display:none;
+	}
+}

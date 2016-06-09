@@ -1,6 +1,16 @@
 <?php
   $page_file = "admin.php";
   require_once("../inc/functions.php");
+
+  if(isset($_POST['login'])) {
+    $user = $_POST['user'];
+    $password = $_POST['password'];
+
+    $hash = hash("sha512", $password);
+
+    $login = $User->logInUser($user, $hash);
+  }
+
  ?>
  <html lang="en"><head>
      <meta charset="utf-8">
@@ -26,7 +36,11 @@
  <div id="container">
    <div id="modal">
 
-     <form class="login-panel" autocomplete="off">
+     <div id="logo">
+       <img src="../images/TallEst_logo.png" class="img-resp">
+     </div>
+
+     <form method="post" action="index.php" class="login-panel" autocomplete="off">
        <div class="form-group inner-addon left-addon to-login">
          <i class="glyphicon glyphicon-user"></i>
          <input class="login" type="text" name="user" placeholder="Kasutajanimi">
@@ -42,7 +56,7 @@
            <span class="glyphicon glyphicon-list-alt"></span> Registreeru
          </button>-->
 
-         <button type="button" name="login" class="btn login-btn btn-sm">
+         <button type="submit" name="login" class="btn login-btn btn-sm">
            <span class="glyphicon glyphicon-log-in"></span> Logi sisse
          </button>
        </div>

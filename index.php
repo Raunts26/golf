@@ -2,39 +2,18 @@
   $page_file = "index.php";
   require_once("inc/functions.php");
  ?>
- index.html
- Details
- Activity
- TODAY
- H
- Helen Pcreated and shared an item in
- 3:13 PM
- Google Drive Folder
- SuvePraktika
- HTML
- index.html
- R
- Can edit
- You
- s
- Can edit
- siim heinla
 
- Can edit
- Annika Antsman
- Show all...
- No recorded activity before June 8, 2016
-
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
  <html lang="et">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
    <head>
      <meta charset="utf-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link href="style.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
      <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+     <script src="js/smooth.js"></script>
    </head>
   	<body>
 
@@ -103,24 +82,24 @@
  				        <li><a href="/en">In English<span class="icon-angle-right"></span></a></li>
  							</ul>
  							<ul class="nav navbar-nav desktopmenyy">
- 				            <li><a href="/anneta">Avaleht</a></li>
- 				            <li><a href="/toetajad">Meist</a></li>
- 				            <li><a href="/tegemised">Golf eesti?</a></li>
- 				            <li><a href="/urmelid">Golfi- ja kultuurireisid</a></li>
- 				            <li><a href="/uudised">Eesti golfikeskused</a></li>
- 				            <li><a href="/toetusfondist">Kontakt</a></li>
+ 				            <li><a href="#anneta">Avaleht</a></li>
+ 				            <li><a href="#meist">Meist</a></li>
+ 				            <li><a href="#tegemised">Golf eesti?</a></li>
+ 				            <li><a href="#urmelid">Golfi- ja kultuurireisid</a></li>
+ 				            <li><a href="#uudised">Eesti golfikeskused</a></li>
+ 				            <li><a href="#toetusfondist">Kontakt</a></li>
  							</ul>
  						</div>
  					</div>
 
  					<div class="clearfix"></div>
 
- 					<div class="meist-wrapper">
+ 					<div id="meist" class="meist-wrapper">
  						<div class="meist-content">
  							<div class="col-xs-12"><h2 class="text-center">MEIST</h2></div>
  							<div class="col-xs-12 col-sm-6 text-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus luctus massa quis vestibulum. Morbi sagittis lobortis interdum. Duis augue nisi, molestie eu tortor quis, molestie imperdiet erat. Aliquam tempor condimentum diam eget cursus. Phasellus et dui a sapien tempus hendrerit eget vitae nisl. Aenean congue viverra mi eget congue. Sed malesuada viverra pharetra. Ut eu nulla in nibh aliquet sagittis. Pellentesque et vulputate justo. Vivamus ornare nulla nec dolor eleifend ultrices. Suspendisse in lacinia ipsum. Aenean nec vestibulum ante. Nam semper nec nunc id pellentesque.
  							</div>
- 							<div class="col-xs-12 col-sm-6"><img class="sisu-pilt" src="suvapilt.jpeg"></div>
+ 							<div class="col-xs-12 col-sm-6"><img class="sisu-pilt" src="images/suvapilt.jpeg"></div>
  						</div>
  					</div>
 
@@ -135,7 +114,7 @@
  								Maecenas ac nibh eget est elementum pellentesque. Proin ipsum nisi, mattis eu justo eget, porta tristique nibh. Sed gravida dui sed augue sollicitudin rhoncus. Aenean leo diam, commodo id fermentum mollis, blandit vitae odio. Curabitur scelerisque nisi congue ligula accumsan porttitor. Nulla eu leo commodo leo congue sollicitudin in gravida nunc. Phasellus id ultricies nisi.
  								</p>
  							</div>
- 							<div class="col-xs-12"><img class="sisu-pilt" src="suvapilt.jpeg" style="height:200px;"></div>
+ 							<div class="col-xs-12"><img class="sisu-pilt" src="images/suvapilt.jpeg" style="height:200px;"></div>
  						</div>
  					</div>
 
@@ -148,7 +127,7 @@
  								<h3>Individuaalne</h3>
  									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus luctus massa quis vestibulum. Morbi sagittis lobortis interdum. Duis augue nisi, molestie eu tortor quis, molestie imperdiet erat.</p>
  							</div>
- 							<div class="col-xs-12 col-sm-6"><img class="sisu-pilt" src="suvapilt.jpeg"></div>
+ 							<div class="col-xs-12 col-sm-6"><img class="sisu-pilt" src="images/suvapilt.jpeg"></div>
  						</div>
  					</div>
 
@@ -156,22 +135,22 @@
  							<div class="col-xs-12"><h2 class="text-center">EESTI GOLFIKESKUSED</h2></div>
  							<iframe src="https://www.google.com/maps/d/embed?mid=1OlVatktlUHO5n_cywddjBnHBzec" width="100%" height="500"></iframe></div>
  							<!--<div class="col-xs-12 col-sm-6">
- 								<img class="sisu-pilt" src="suvapilt.jpeg">
+ 								<img class="sisu-pilt" src="images/suvapilt.jpeg">
  								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus luctus massa quis vestibulum. Morbi sagittis lobortis interdum. Duis augue nisi, molestie eu tortor quis, molestie imperdiet erat.</p>
  							</div>
 
  							<div class="col-xs-12 col-sm-6">
- 								<img class="sisu-pilt" src="suvapilt.jpeg">
+ 								<img class="sisu-pilt" src="images/suvapilt.jpeg">
  								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus luctus massa quis vestibulum. Morbi sagittis lobortis interdum. Duis augue nisi, molestie eu tortor quis, molestie imperdiet erat.</p>
  							</div>
 
  							<div class="col-xs-12 col-sm-6">
- 								<img class="sisu-pilt" src="suvapilt.jpeg">
+ 								<img class="sisu-pilt" src="images/suvapilt.jpeg">
  								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus luctus massa quis vestibulum. Morbi sagittis lobortis interdum. Duis augue nisi, molestie eu tortor quis, molestie imperdiet erat.</p>
  							</div>
 
  							<div class="col-xs-12 col-sm-6">
- 								<img class="sisu-pilt" src="suvapilt.jpeg">
+ 								<img class="sisu-pilt" src="images/suvapilt.jpeg">
  								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus luctus massa quis vestibulum. Morbi sagittis lobortis interdum. Duis augue nisi, molestie eu tortor quis, molestie imperdiet erat.</p>
  							</div>-->
  						</div>
@@ -187,7 +166,7 @@
  								<h4>+372 1234 5678</h4>
  								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus luctus massa quis vestibulum.</p>
  							</div>
- 							<div class="col-xs-12 col-sm-6"><img class="sisu-pilt" src="suvapilt.jpeg"></div>
+ 							<div class="col-xs-12 col-sm-6"><img class="sisu-pilt" src="images/suvapilt.jpeg"></div>
  					</div>
 
  		    <div class="footer">

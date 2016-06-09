@@ -9,6 +9,15 @@ body {
   background-color: rgba(0,0,0,0.4);
 }
 
+#logo {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.img-resp {
+  width: 400px;
+}
+
 #container {
   filter: blur(10px);
   width: 100%;
@@ -33,7 +42,7 @@ body {
 
 .login-panel {
   position: relative;
-  margin: 80% auto;
+  margin: 30% auto;
   text-align: center;
 }
 
