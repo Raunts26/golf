@@ -14,7 +14,7 @@
      <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
      <script src="js/smooth.js"></script>
-	  <title>Golfileht</title>
+	  <title><?=$page_file_name;?></title>
    </head>
 
 	<body>

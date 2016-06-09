@@ -1,5 +1,6 @@
 <?php
   $page_file = "index.php";
+  $page_file_name = "Golf in Estonia";
   require_once("header.php");
  ?>
  
