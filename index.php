@@ -17,10 +17,17 @@
     $Admin->editPage("title", $title, 1); // 1 asendada IDga
   }
 
-  echo("<h2>" . $page->title . "</h2>");
+  #echo("<h2 id='123'>" . $page->title . "</h2><span class='glyphicon glyphicon-search' id='edit-title'></span>");
   echo("<pre>" . $page->content . "</pre>");
 
  ?>
+
+ <script src="js/app.js"></script>
+
+ <form method="post" action="index.php">
+   <h2><?=$page->title;?></h2>
+
+ </form>
 
  <form method="post" action="index.php">
 
