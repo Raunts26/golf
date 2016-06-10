@@ -14,6 +14,7 @@
      <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
      <script src="js/smooth.js"></script>
+     <script src="//cdn.ckeditor.com/4.5.9/standard/ckeditor.js"></script>
 	  <title><?=$page_file_name;?></title>
    </head>
 

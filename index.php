@@ -2,8 +2,40 @@
   $page_file = "index.php";
   $page_file_name = "Golf in Estonia";
   require_once("header.php");
+
+
+  $page = $Admin->showPage(1);
+
+  if(isset($_POST['save_content'])) {
+
+    $content = $_POST['editor1'];
+    $Admin->editPage("content", $content, 1); // 1 asendada IDga
+
+  } else if(isset($_POST['save_title'])) {
+    $title = $_POST['title'];
+
+    $Admin->editPage("title", $title, 1); // 1 asendada IDga
+  }
+
+  echo("<h2>" . $page->title . "</h2>");
+  echo("<pre>" . $page->content . "</pre>");
+
  ?>
- 
+
+ <form method="post" action="index.php">
+
+     <textarea name="editor1" id="editor1" rows="10" cols="80">
+         <?=$page->content?>
+     </textarea>
+
+     <script>
+         CKEDITOR.replace( 'editor1' );
+     </script>
+
+     <button type="submit" name="save_content">Salvesta</button>
+
+ </form>
+
  		<div class="body-wrapper">
  			<!--
        <div class="header-mobile-navi">

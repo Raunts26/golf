@@ -1,9 +1,9 @@
 <?php
 
-	if ($page_file == "index.php") {
-		require_once("config.php");
-	} else {
+	if ($page_file == "admin.php") {
 		require_once("../config.php");
+	} else {
+		require_once("config.php");
 	}
 
   require_once("admin.class.php");
