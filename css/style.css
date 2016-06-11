@@ -14,7 +14,7 @@
 	padding-bottom: 20px;
 }
 .sisu-col-12{
-	    padding-right: 100px;
+	    /*padding-right: 100px;*/
 }
 #golfcourses-content{
 	display: none;
@@ -131,6 +131,9 @@ ul{
 	  width: 100%;
 	}
 @media(max-width:768px){
+	.footer-logo{
+		display:none;
+	}
 	.golf-couses-block{
 
 		padding-right:0px !important;
@@ -157,7 +160,7 @@ ul{
 
 	.navi-wrapper {
 	    padding:20px 30px;
-			top: 50px;
+			top: 50px !important;
 	    right: 0;
 	    background: #FFFFFF;
 	    left: 0;
@@ -178,7 +181,16 @@ ul{
 		height: 200px;
     margin-top: 20px;
     padding-top: 20px;
-    padding-right: 200px;
     box-shadow: inset 0px 11px 25px -12px rgba(35, 37, 36, 0.97);
     background-color: rgba(179, 162, 162, 0.26) !important;
+}
+.footer .footer-content{
+	width:1220px;
+	margin: 0 auto;
+}
+
+.submenu-icon{
+    width: 30px;
+    position: absolute;
+    left: 20px;
 }

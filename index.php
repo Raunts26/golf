@@ -1,55 +1,12 @@
 
-<html lang="et">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-  </head>
- 	<body>
+<?php
 
-<title>Golfileht</title>
+  $page_file = "index.php";
+  $page_file_name = "Home";
+  require_once("header.php");
 
+?>
 
-
-	</head>
-	<body>
-
-		<div class="body-wrapper">
-			<div class="content-wrapper">
-				<div class="header-desktop">
-					<nav class="navbar navbar-default golf-navbar">
-	  				<div class="container-fluid">
-					    <div class="navbar-header">
-					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					        <span class="sr-only">Toggle navigation</span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					      </button>
-					      <a class="navbar-brand" href="#"><img class="nav-logo" src="images/TallEst_logo.png"></a>
-					    </div>
-
-					    <!-- Collect the nav links, forms, and other content for toggling -->
-					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					    	<div class="navi-wrapper">
-						    	<ul class="lang-selector lang-selector-white">
-						        <li><a href="/en">In English<span class="icon-angle-right"></span></a></li> 
-									</ul>
-						      <ul class="nav navbar-nav navbar-desktop">
-						        <li><a href="index.html">Avaleht</a></li>
-				            <li><a href="golfinestonia.html">Golf in Estonia</a></li>
-				            <li><a href="ankeet.html">Golf & culture tours</a></li>
-				            <li><a href="#golfikeskused">Culture & Incentive tours</a></li>
-				            <li><a href="#kontakt">Contact</a></li> 
-						      </ul>				    
-						    </div><!-- /.navbar-collapse -->
-					 	  </div><!-- /.container-fluid -->
-					 	</div>
-					</nav>
-				</div>
 
 					<div class="clearfix"></div>
 
@@ -74,7 +31,7 @@
 							</div>
 							<div class="col-xs-12"><img class="sisu-pilt" src="images/suvapilt.jpeg" style="height:200px;"></div>
 						</div>
-						
+
 
 					<div class="kultuurireisid-wrapper" id="golfireisid">
 						<div class="col-xs-12"><h2 class="text-center">GOLFI- JA KULTUURIREISID</h2></div>
@@ -102,25 +59,5 @@
 					</div>
 					</div><!--body wrapperi lõpp-->
 					</div><!--content lõppeb-->
-				<div class="clearfix"></div>
-		    <div class="footer">
-		    	<div class="col-xs-4"><img class="nav-logo" src="images/TallEst_logo.png" style="height:150px"></div>
-		    	<div class="col-xs-8">
-		    		<p>TallEst Incentive Travels OÜ</p>
-		    		<p>Reg nr. 2020020220202</p>
-		    		<p>Reg nr. 2020020220202</p>
-		    		<p>info@tallest.com</p>
-		    		<p>+372 1234 5678</p>
-		    	</div>
-				</div>
-			
 
-			<!-- Latest compiled and minified JavaScript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-<script src="js/functions.js"></script>
-
-
-	</body>
-</html>
+<?php require_once("footer.php");

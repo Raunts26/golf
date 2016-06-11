@@ -13,11 +13,11 @@ class User {
 
 
 
-	function logInUser($email, $hash){
+	function logInUser($user, $hash){
 		$response = new StdClass();
     #Checks if user and password are correct
 		$stmt = $this->connection->prepare("SELECT id FROM users WHERE username=? AND password=?");
-		$stmt->bind_param("ss", $email, $hash);
+		$stmt->bind_param("ss", $user, $hash);
 		$stmt->bind_result($id);
 		$stmt->execute();
     #False
@@ -25,7 +25,7 @@ class User {
 
 			$error = new StdClass();
 			$error->id = 0;
-			$error->message = "Vale email/parool!";
+			$error->message = "Vale kasutaja/parool!";
 			$response->error = $error;
 
 			return $response;
@@ -33,13 +33,13 @@ class User {
 		$stmt->close();
 		#Creating new session
     $stmt = $this->connection->prepare("SELECT id, username FROM users WHERE username=? AND password=?");
-    $stmt->bind_param("ss", $email, $hash);
+    $stmt->bind_param("ss", $user, $hash);
     $stmt->bind_result($id, $username);
     $stmt->execute();
     if($stmt->fetch()){
 
-  		$_SESSION['logged_in_user_id'] = $id_from_db;
-  		$_SESSION['logged_in_user_email'] = $email_from_db;
+  		$_SESSION['logged_id'] = $id;
+  		$_SESSION['logged_user'] = $username;
 
   		header("Location: ../index.php");
   		exit();

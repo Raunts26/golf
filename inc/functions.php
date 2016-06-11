@@ -1,6 +1,6 @@
 <?php
 
-	if ($page_file == "admin.php") {
+	if ($page_file == "admin.php" || $page_file == "ajax.php") {
 		require_once("../config.php");
 	} else {
 		require_once("config.php");
@@ -9,6 +9,7 @@
   require_once("admin.class.php");
   require_once("register.class.php");
 	require_once("user.class.php");
+	require_once("ajax.php");
 
   $database = "if15_Turismiveeb";
 
