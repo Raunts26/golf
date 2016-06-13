@@ -65,7 +65,7 @@
                   </div>
                 </div>
 				</div>
-		</div>
+					</div>
 								
 								
 							<div class="sisu" id="book-a-tour-content" style="display:none">
