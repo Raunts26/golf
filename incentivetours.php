@@ -9,6 +9,8 @@
   $page = $Admin->showPage($page_id);
 ?>
 
+  <div id="page-id" style="display: none;"><?=$page_id?></div>
+
 				<div class="clearfix"></div>
 
 				<div class="content">
@@ -63,6 +65,7 @@
                   </div>
                 </div>
 							</div>
+            </div>
 							<div class="sisu" id="book-a-tour-content" style="display:none">
 							<h2>Book a tour</h2>
 
@@ -120,7 +123,7 @@
 		</div>
 		<div class="clearfix"></div>
 
- 
+
 <?php
   require_once("footer.php");
  ?>

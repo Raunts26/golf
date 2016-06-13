@@ -38,11 +38,13 @@
 
         document.querySelector("#save_title").addEventListener("click", function() {
           var content = document.querySelector("#edit-title").value;
+          var page_id = document.querySelector("#page-id").innerHTML;
 
           $.ajax({
             url: "inc/ajax.php",
             type: "POST",
             data: {title: content,
+                   id: page_id,
                    save_title: 'yes'},
             success: function(data){
               document.querySelector("#edit-area").style.display = "none";
@@ -69,11 +71,13 @@
         document.querySelector("#save_text").addEventListener("click", function() {
 
           var content = document.querySelector("#editor1").value;
+          var page_id = document.querySelector("#page-id").innerHTML;
 
           $.ajax({
             url: "inc/ajax.php",
             type: "POST",
             data: {editor1: content,
+                   id: page_id,
                    save_content: 'yes'},
                    dataType: "text",
             success: function(data){
