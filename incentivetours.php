@@ -9,12 +9,14 @@
   $page = $Admin->showPage($page_id);
 ?>
 
+  <div id="page-id" style="display: none;"><?=$page_id?></div>
+
 				<div class="clearfix"></div>
 
 				<div class="content">
 					<div class="col-xs-12 col-sm-4 submenu-col">
 						<ul class="submenu">
-						  <li><a onclick="$('#golf-and-culture-content').show(); $('#book-a-tour-content').hide();"><img class="submenu-icon" src="images/rahvamuster.png">Golf & culture tours</a></li>
+						  <li><a onclick="$('#golf-and-culture-content').show(); $('#book-a-tour-content').hide();"><img class="submenu-icon" src="images/rahvamuster.png"><span id="page-1"><?=$page->title;?></span></a></li>
 				      <li><a onclick="$('#book-a-tour-content').show(); $('#golf-and-culture-content').hide();"><img class="submenu-icon" src="images/rahvamuster.png">Book a tour</a></li>
 					</div>
 
@@ -63,6 +65,7 @@
                   </div>
                 </div>
 							</div>
+            </div>
 							<div class="sisu" id="book-a-tour-content" style="display:none">
 							<h2>Book a tour</h2>
 
@@ -120,7 +123,7 @@
 		</div>
 		<div class="clearfix"></div>
 
- 
+
 <?php
   require_once("footer.php");
  ?>

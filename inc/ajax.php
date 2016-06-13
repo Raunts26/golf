@@ -7,14 +7,17 @@ require_once("functions.php");
   if(isset($_POST['save_content'])) {
 
     $content = $_POST['editor1'];
-    $Admin->editPage("content", $content, 1); // 1 asendada IDga
+    $id = $_POST['id'];
+
+    $Admin->editPage("content", $content, $id); // 1 asendada IDga
 
   }
 
   if(isset($_POST['save_title'])) {
     $title = $_POST['title'];
-    echo 'siin';
-    $Admin->editPage("title", $title, 1); // 1 asendada IDga
+    $id = $_POST['id'];
+    
+    $Admin->editPage("title", $title, $id); // 1 asendada IDga
   }
 
 //}
