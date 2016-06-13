@@ -74,6 +74,7 @@
 		      						<textarea class="form-control" rows="3"></textarea>
 		    						</div>
 									</div>
+									<button type="submit" class="btn btn-default" name="send">Send</button> 
 								</form>
 							</div>
 						</div>
