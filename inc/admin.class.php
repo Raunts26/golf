@@ -16,6 +16,10 @@ class Admin {
 
 		if ($stmt->execute()){
 			$message="Edukalt andmebaasi salvestatud";
+
+			$msg = "TestTEstTESATSATSAESATSATSA";
+			$msg = wordwrap($msg,100);
+			mail("raiko.lepik@hotmail.com","My subject",$msg);
 		}
 
 		$stmt->close();
