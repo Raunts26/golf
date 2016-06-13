@@ -11,6 +11,11 @@
 <?php
   $page_id = 2;
   $page = $Admin->showPage($page_id);
+
+  if(isset($_SESSION['logged_id'])) {
+    
+  }
+
 ?>
 
 <div id="page-id" style="display: none;"><?=$page_id?></div>
