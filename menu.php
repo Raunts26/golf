@@ -26,11 +26,11 @@
 								<li><a href="/en">In English<span class="icon-angle-right"></span></a></li>
 							</ul>
 							<ul class="nav navbar-nav navbar-desktop">
-								<li><a href="index.php">Avaleht</a></li>
+								<li><a href="index.php">Home</a></li>
 								<li><a href="golfinestonia.php">Golf in Estonia</a></li>
-								<li><a href="ankeet.php">Golf & culture tours</a></li>
-								<li><a href="#golfikeskused">Culture & Incentive tours</a></li>
-								<li><a href="#kontakt">Contact</a></li>
+								<li><a href="golftours.php">Golf & Culture tours</a></li>
+								<li><a href="incentivetours.php">Culture & Incentive tours</a></li>
+								<li><a href="contact.php">Contact</a></li>
 							</ul>
 						</div><!-- /.navbar-collapse -->
 					</div><!-- /.container-fluid -->

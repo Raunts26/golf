@@ -9,9 +9,8 @@
 ?>
 
 <?php
-  $page_id = 1;
+  $page_id = 2;
   $page = $Admin->showPage($page_id);
-
 ?>
 
 				<div class="clearfix"></div>
@@ -106,4 +105,4 @@
 
 		<div class="clearfix"></div>
 
-<?php require_once("footer.php");
+<?php require_once("footer.php");?>
