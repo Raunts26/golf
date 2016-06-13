@@ -4,13 +4,24 @@
   require_once("header.php");
  ?>
 
+<?php
+function send() {
+  $msg = " TestTestTestTestTestTest";
+  $msg = wordwrap($msg,100);
+  mail("raiko.lepik@hotmail.com","My subject",$msg);
+}
 
+send();
+
+
+
+ ?>
 
 				<div class="clearfix"></div>
-				
+
 				<div class="content">
 				<div class="clearfix"></div>
-				
+
 				<div class="content">
 					<div class="col-sm-6">
 						<h3>Tekkis küsimus? Võta meiega ühendust!</h3>

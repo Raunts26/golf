@@ -13,6 +13,9 @@
   $page = $Admin->showPage($page_id);
 ?>
 
+<div id="page-id" style="display: none;"><?=$page_id?></div>
+
+
 				<div class="clearfix"></div>
 
 				<div class="content">
