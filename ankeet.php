@@ -7,9 +7,8 @@
 
 ?>
 
-				<div class="clearfix"></div>
-
 				<div class="content">
+				<div class="clearfix"></div>
 					<div class="col-xs-12 col-sm-4 submenu-col">
 						<ul class="submenu">
 						  <li><a onclick="$('#golf-and-culture-content').show(); $('#book-a-tour-content').hide();"><img class="submenu-icon" src="images/rahvamuster.png">Golf & culture tours</a></li>

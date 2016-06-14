@@ -1,21 +1,29 @@
+html{
+	position:relative;
+	min-height: 100%;
+}
+
+html,body{
+	height:100%;
+	background-color: #F4F1F1;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/BlendaScript.otf);
+}
 
 .body-wrapper{
-	position:relative;
-	width:100%;
-	height:100%;
+	background-color: #FFFFFF;
 }
 .content-wrapper{
-	position:relative;
-	width:100%;
-	height:100%;
+	padding-bottom: 40px;
 }
 .golf-couses-block{
 	padding-right:118px;
 	padding-bottom: 20px;
 }
-.sisu-col-12{
-	    /*padding-right: 100px;*/
-}
+
 #golfcourses-content{
 	display: none;
 }
@@ -28,7 +36,7 @@
 }
 .header-desktop{
     width: 100%;
-    height: 700px;
+    height: 570px;
     top: 0;
     background: url('../images/header-golf.jpg') 100% 100%;
     background-size: cover;
@@ -39,12 +47,13 @@
 a{
 	cursor:pointer;
 }
+/*
 ul.desktopmenyy{
 	display:inline-block;
 	margin-top:40px;
 	margin-right:0px;
 
-}
+}*/
 ul.navbar-desktop li a, ul.navbar-desktop li a:hover, ul.desktopmenyy li a:active,
 ul.desktopmenyy li a:visited, ul.lang-selector li a, ul.lang-selector li a:hover,
 ul.lang-selector li a:visited, ul.lang-selector li a:active, .submenu li a,
@@ -58,12 +67,27 @@ ul.lang-selector li a:visited, ul.lang-selector li a:active, .submenu li a,
 ul.lang-selector{
     position: absolute;
     top: 10px;
-    right: 0px;
-    width: 120px;
+    right: 10px;
+    width: 130px;
     z-index: 3000;
 }
-.header-sisuleht{
-	background: url('../images/header-golf.jpg') 100% 35%;
+.lang-flags{
+	height: 15px;
+	margin-right:2px;
+	margin-left:2px;
+}
+.header-text-wrapper{
+	position:absolute;
+	bottom: 160px;
+	width:100%;
+}
+.header-h2{
+	font-family: myFont, sans-serif;
+	color:#FFFFFF;
+	font-size:60px;
+}
+.header-content-page{
+	background: url('../images/header-golf.jpg') 70% 53%;
 	background-size: cover;
 	width:100%;
 	height:300px;
@@ -71,7 +95,7 @@ ul.lang-selector{
 .desktop-logo{
 	width:230px;
 }
-.meist-wrapper, .golfeesti-wrapper, .kultuurireisid-wrapper, .golfikeskused-wrapper, .kontakt-wrapper{
+/*.meist-wrapper, .golfeesti-wrapper, .kultuurireisid-wrapper, .golfikeskused-wrapper, .kontakt-wrapper{
 	width:100%;
 		margin-bottom:40px;
 }
@@ -86,6 +110,7 @@ ul.lang-selector{
 .sisu-pilt{
 	width:100%;
 }
+*/
 .navi-wrapper{
 	position: absolute;
 	top:0px !important;
@@ -96,7 +121,7 @@ ul{
 }
 
 
-/*MENÜÜ*/
+/*MENU*/
 
 @media (min-width: 769px){
 	.navbar-desktop>li {
@@ -121,14 +146,17 @@ ul{
 		background: none;
 		border: none;
 	}
-
+	.navbar-default .navbar-nav > li > a {
+    color: #777;
+    font-size: 18px;
+	}
 	.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:visited {
 	    border: none;
 	    background: none;
 	}
 	.courses-img{
 		max-width: 300px;
-	  width: 100%;
+		width: 100%;
 	}
 @media(max-width:768px){
 	.footer-logo{
@@ -139,7 +167,7 @@ ul{
 		padding-right:0px !important;
 		padding-bottom: 10px;
 	}
-	.sisu-col-12{
+	.content-col-12{
 		    padding-right: 0px;
 	}
 	.nav-logo{
@@ -179,11 +207,9 @@ ul{
 .footer{
     width: 100%;
 	height: 200px;
-	position: absolute;
-    margin-top: 20px;
     padding-top: 20px;
     box-shadow: inset 0px 11px 25px -12px rgba(35, 37, 36, 0.97);
-    background-color: rgba(179, 162, 162, 0.26) !important;
+    background-color: #F4F1F1;
 }
 .footer .footer-content{
 	width:1220px;
@@ -196,30 +222,10 @@ ul{
     left: 20px;
 }
 
-.col-xs-6.u-smartClear:nth-child(2n+2) + .col-xs-6.u-smartClear {
-  clear: both;
+.btn-form-send, .btn-form-cancel{
+	float: right;
 }
-@media (min-width: $screen-sm-min) {
-  .col-xs-6.u-smartClear:nth-child(2n+2) + .col-xs-6.u-smartClear {
-    clear: none;
-  }
-  .col-sm-6.u-smartClear:nth-child(2n+2) + .col-sm-6.u-smartClear,
-  .col-sm-4.u-smartClear:nth-child(3n+3) + .col-sm-4.u-smartClear {
-    clear: both;
-  }
-}
-@media (min-width: $screen-md-min) {
-  .col-sm-6.u-smartClear:nth-child(2n+2) + .col-sm-6.u-smartClear,
-  .col-sm-4.u-smartClear:nth-child(3n+3) + .col-sm-4.u-smartClear {
-    clear: none;
-  }
-  .col-md-4.u-smartClear:nth-child(3n+3) + .col-md-4.u-smartClear,
-  .col-md-3.u-smartClear:nth-child(4n+4) + .col-md-3.u-smartClear {
-    clear: both;
-  }
-}
-@media (min-width: $screen-md-min) {
-  .col-lg-4.u-smartClear:nth-child(3n+3) + .col-lg-4.u-smartClear {
-    clear: both;
-  }
+
+.btn-form-cancel{
+	margin-right: 10px;
 }

@@ -4,7 +4,7 @@
 		<?php if($page_file == "index.php"): ?>
 			<div class="header-desktop">
 		<?php else: ?>
-			<div class="header-sisuleht">
+			<div class="header-content-page">
 		<?php endif; ?>
 
 			<nav class="navbar navbar-default golf-navbar">
@@ -23,7 +23,7 @@
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<div class="navi-wrapper">
 							<ul class="lang-selector lang-selector-white">
-								<li><a href="/en">In English<span class="icon-angle-right"></span></a></li>
+						        <li><a href="/en"><img class="lang-flags" src="images/se.png"><img class="lang-flags" src="images/gb.png"><img class="lang-flags" src="images/ru.png"></a></li> 
 							</ul>
 							<ul class="nav navbar-nav navbar-desktop">
 								<li><a href="index.php">Home</a></li>
@@ -36,4 +36,5 @@
 					</div><!-- /.container-fluid -->
 				</div>
 			</nav>
+			<div class="header-text-wrapper"><h2 class="text-center header-h2">Golf and cultural tours to Estonia</h2></div>
 		</div>
