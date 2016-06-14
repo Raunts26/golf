@@ -36,5 +36,4 @@
 					</div><!-- /.container-fluid -->
 				</div>
 			</nav>
-			<div class="header-text-wrapper"><h2 class="text-center header-h2">Golf and cultural tours to Estonia</h2></div>
 		</div>
