@@ -15,9 +15,42 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
+<script src="//cdn.ckeditor.com/4.5.9/standard/ckeditor.js"></script>
 <script src="js/functions.js"></script>
 <script src="js/app.js"></script>
+
+<script>
+
+  //console.log(App.instance.contents);
+
+  function saveArt()
+  {
+      for (instance in CKEDITOR.instances) {
+          CKEDITOR.instances[instance].updateElement();
+      }
+
+
+   }
+    CKEDITOR.replace( 'editor1' );
+    /*var new_height = document.querySelector("#text-area").offsetHeight;
+    var editor = CKEDITOR.replace('editor1', { height: new_height });*/
+
+
+  function saveArt2()
+  {
+      for (instance in CKEDITOR.instances) {
+          CKEDITOR.instances[instance].updateElement();
+      }
+
+
+   }
+    CKEDITOR.replace( 'editor2');
+    //CKEDITOR.instances['editor2'].setData(App.instance.contents)
+    /*var new_height = document.querySelector("#text-area").offsetHeight;
+    var editor = CKEDITOR.replace('editor1', { height: new_height });*/
+</script>
+
+
 
 
 </body>

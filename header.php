@@ -12,7 +12,6 @@
     <link href="css/style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="icon" href="images/rahvamuster.png" type="image/x-icon">
-    <script src="//cdn.ckeditor.com/4.5.9/standard/ckeditor.js"></script>
 
     <title><?=$page_file_name;?></title>
   </head>
