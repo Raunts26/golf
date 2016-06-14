@@ -22,7 +22,7 @@
 
 <script>
 
-  //console.log(App.instance.contents);
+  console.log(App.instance.contents);
 
   function saveArt()
   {
