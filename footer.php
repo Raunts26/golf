@@ -20,6 +20,37 @@
 <script src="js/app.js"></script>
 <script src="js/calendar.js"></script>
 
+<script>
+
+  console.log(App.instance.contents);
+
+  function saveArt()
+  {
+      for (instance in CKEDITOR.instances) {
+          CKEDITOR.instances[instance].updateElement();
+      }
+
+
+   }
+    CKEDITOR.replace( 'editor1' );
+    /*var new_height = document.querySelector("#text-area").offsetHeight;
+    var editor = CKEDITOR.replace('editor1', { height: new_height });*/
+
+
+  function saveArt2()
+  {
+      for (instance in CKEDITOR.instances) {
+          CKEDITOR.instances[instance].updateElement();
+      }
+
+
+   }
+    CKEDITOR.replace( 'editor2');
+    //CKEDITOR.instances['editor2'].setData(App.instance.contents)
+    /*var new_height = document.querySelector("#text-area").offsetHeight;
+    var editor = CKEDITOR.replace('editor1', { height: new_height });*/
+</script>
+
 
 </body>
 </html>
