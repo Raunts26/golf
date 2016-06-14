@@ -2,7 +2,7 @@
   $page_file = "golftours.php";
   $page_file_name = "Golf and Culture Tours";
   require_once("header.php");
- ?>
+?>
  
 <?php
   $page_id = 3;
@@ -10,10 +10,10 @@
 ?>
 
   <div id="page-id" style="display: none;"><?=$page_id?></div>
-
+  
 				<div class="clearfix"></div>
-
 				<div class="content">
+				
 					<div class="col-xs-12 col-sm-4 submenu-col">
 						<ul class="submenu">
 						  <li><a onclick="$('#golf-and-culture-content').show(); $('#book-a-tour-content').hide();"><img class="submenu-icon" src="images/rahvamuster.png"><span id="page-1"><?=$page->title;?></span></a></li>
@@ -116,18 +116,19 @@
 		      						<textarea class="form-control" rows="3"></textarea>
 		    						</div>
 									</div>
-									<button type="submit" class="btn btn-success" name="send">Send</button>
-									<button type="button" class="btn btn-danger" name="send">Cancel</button> 
+									<button type="submit" class="btn btn-success" name="sendForm">Send</button>
+									<button type="button" class="btn btn-danger" name="cancelForm">Cancel</button> 
 								</form>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="clearfix"></div>
 			</div>
 		</div>
-		<div class="clearfix"></div>
+		
 
  
 <?php
   require_once("footer.php");
- ?>
+?>

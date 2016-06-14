@@ -35,8 +35,8 @@
   <div id="page-id" style="display: none;"><?=$page_id?></div>
 
 				<div class="clearfix"></div>
-
 				<div class="content">
+				
 					<div class="col-xs-12 col-sm-4 submenu-col">
 						<ul class="submenu">
 						  <li><a onclick="$('#history-content').show(); $('#golfcourses-content').hide();"><img class="submenu-icon" src="images/rahvamuster.png"><span id="page-1"><?=$page->title;?></span></a></li>
@@ -160,11 +160,12 @@
 						  </div>
 						</div>
 					</div>
+					<div class="clearfix"></div>
 				</div><!--content lõpp-->
 			</div><!--header-sisuleht lõpp-->
 		</div><!--body-wrapper lõpp-->
 
 
-		<div class="clearfix"></div>
+		
 
 <?php require_once("footer.php");?>

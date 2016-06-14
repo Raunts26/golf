@@ -2,7 +2,7 @@
   require_once ("../header.php");
   $page_file_name = "Culture and Incentive Tours";
   $page_file = "incentive.php";
- ?>
+?>
 
 
 <?php 
@@ -149,7 +149,7 @@
 
 <?php 
  require_once ("../footer.php"); 
- ?>
+?>
 
  
 

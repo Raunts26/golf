@@ -1,10 +1,7 @@
-
 <?php
-
   $page_file = "index.php";
   $page_file_name = "Home";
   require_once("header.php");
-
 ?>
 
 
@@ -60,4 +57,6 @@
 					</div><!--body wrapperi lõpp-->
 					</div><!--content lõppeb-->
 
-<?php require_once("footer.php");
+<?php
+  require_once("footer.php");
+?>

@@ -1,6 +1,6 @@
 <?php
   require_once("inc/functions.php");
- ?>
+?>
 
 <!DOCTYPE html>
 <html lang="et">
@@ -17,4 +17,6 @@
     <title><?=$page_file_name;?></title>
   </head>
  	<body>
-    <?php require_once("menu.php");
+  <?php
+    require_once("menu.php");
+  ?>
