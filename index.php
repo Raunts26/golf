@@ -24,7 +24,7 @@
 						  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus luctus massa quis vestibulum. Morbi sagittis lobortis interdum. Duis augue nisi, molestie eu tortor quis, molestie imperdiet erat.</p>
 						</div>
 
-					
+					<div class="clearfix"></div>
 					</div><!--body wrapperi lõpp-->
 					</div><!--content lõppeb-->
 

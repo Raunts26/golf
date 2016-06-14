@@ -1,4 +1,3 @@
-<div class="clearfix"></div>
 <div class="footer">
   <div class="footer-content">
     <div class="col-xs-12 col-sm-4"><img class="nav-logo footer-logo" src="images/TallEst_logo.png" style="height:150px"></div>
