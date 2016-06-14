@@ -110,6 +110,39 @@
 		      						<input type="text" class="form-control" id="" placeholder="...">
 		    						</div>
 									</div>
+									<!--calendar-->
+									<div id="cal"> 
+									    <div class="header"> 
+											<span class="left button" id="previous"> &lang; </span> 
+											<span class="month-year" id="month-year"></span>
+											<span class="right button" id="next"> &rang; </span>
+									    </div> 
+									    <table id="days"> 
+											<td>Mon</td> 
+											<td>Tue</td> 
+											<td>Wed</td> 
+											<td>Thu</td> 
+											<td>Fri</td>
+											<td>Sat</td> 
+											<td>Sun</td> 
+									    </table> 
+									    <div id="cal-frame"> 
+											<table id="table"> 
+													
+											</table>
+									    </div> 
+									</div>
+										<!--end of calendar-->
+										
+									<!-- The Modal -->
+									<div id="modal" class="modal" >
+									<!-- Modali sisu -->
+										<div class="modal-content">
+											<span id="close">x</span>
+											<p id="modalContent"></p>
+										</div>
+									</div>
+									<!-- Modali lõpp -->
 									<div class="form-group">
 								  	<label for="" class="col-sm-4 control-label">Lisainfo</label>
 								  	<div class="col-sm-8">
