@@ -8,6 +8,11 @@ html,body{
 	background-color: #F4F1F1;
 }
 
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/BlendaScript.otf);
+}
+
 .body-wrapper{
 	background-color: #FFFFFF;
 }
@@ -31,7 +36,7 @@ html,body{
 }
 .header-desktop{
     width: 100%;
-    height: 700px;
+    height: 570px;
     top: 0;
     background: url('../images/header-golf.jpg') 100% 100%;
     background-size: cover;
@@ -72,11 +77,11 @@ ul.lang-selector{
 }
 .header-text-wrapper{
 	position:absolute;
-	bottom: 120px;
+	bottom: 160px;
 	width:100%;
 }
 .header-h2{
-	font-family: 'Blenda Script', sans-serif;
+	font-family: myFont, sans-serif;
 	color:#FFFFFF;
 	font-size:60px;
 }
