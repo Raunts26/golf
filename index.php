@@ -1,7 +1,7 @@
 <?php
   $page_file = "index.php";
   $page_file_name = "Home";
-  require_once("header.php");
+  require_once("header_desktop.php");
 ?>
 
 
@@ -9,7 +9,7 @@
 
 					<div class="content">
 						<div class="col-xs-12 col-sm-4 golf-courses-block">
-						  <img class="courses-img" src="images/vabaohumuuseum2.jpeg">
+						  <img class="courses-img" src="images/saare_golf.jpg">
 						  <h4>Niitvälja golf</h4>
 						  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus luctus massa quis vestibulum. Morbi sagittis lobortis interdum. Duis augue nisi, molestie eu tortor quis, molestie imperdiet erat.</p>
 						</div>
