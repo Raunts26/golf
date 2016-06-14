@@ -45,7 +45,7 @@ ul.desktopmenyy{
 	margin-right:0px;
 
 }
-ul.navbar-desktop li a, ul.navbar-desktop li a:hover, ul.desktopmenyy li a:active, 
+ul.navbar-desktop li a, ul.navbar-desktop li a:hover, ul.desktopmenyy li a:active,
 ul.desktopmenyy li a:visited, ul.lang-selector li a, ul.lang-selector li a:hover,
 ul.lang-selector li a:visited, ul.lang-selector li a:active, .submenu li a,
 .submenu li a:hover, .submenu li a:active, .submenu li a:focus, .submenu li a:visited {
@@ -194,4 +194,32 @@ ul{
     width: 30px;
     position: absolute;
     left: 20px;
+}
+
+.col-xs-6.u-smartClear:nth-child(2n+2) + .col-xs-6.u-smartClear {
+  clear: both;
+}
+@media (min-width: $screen-sm-min) {
+  .col-xs-6.u-smartClear:nth-child(2n+2) + .col-xs-6.u-smartClear {
+    clear: none;
+  }
+  .col-sm-6.u-smartClear:nth-child(2n+2) + .col-sm-6.u-smartClear,
+  .col-sm-4.u-smartClear:nth-child(3n+3) + .col-sm-4.u-smartClear {
+    clear: both;
+  }
+}
+@media (min-width: $screen-md-min) {
+  .col-sm-6.u-smartClear:nth-child(2n+2) + .col-sm-6.u-smartClear,
+  .col-sm-4.u-smartClear:nth-child(3n+3) + .col-sm-4.u-smartClear {
+    clear: none;
+  }
+  .col-md-4.u-smartClear:nth-child(3n+3) + .col-md-4.u-smartClear,
+  .col-md-3.u-smartClear:nth-child(4n+4) + .col-md-3.u-smartClear {
+    clear: both;
+  }
+}
+@media (min-width: $screen-md-min) {
+  .col-lg-4.u-smartClear:nth-child(3n+3) + .col-lg-4.u-smartClear {
+    clear: both;
+  }
 }
