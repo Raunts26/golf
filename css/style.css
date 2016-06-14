@@ -16,14 +16,14 @@ html,body{
 .body-wrapper{
 	background-color: #FFFFFF;
 }
-
+.content-wrapper{
+	padding-bottom: 40px;
+}
 .golf-couses-block{
 	padding-right:118px;
 	padding-bottom: 20px;
 }
-.sisu-col-12{
-	    /*padding-right: 100px;*/
-}
+
 #golfcourses-content{
 	display: none;
 }
@@ -47,12 +47,13 @@ html,body{
 a{
 	cursor:pointer;
 }
+/*
 ul.desktopmenyy{
 	display:inline-block;
 	margin-top:40px;
 	margin-right:0px;
 
-}
+}*/
 ul.navbar-desktop li a, ul.navbar-desktop li a:hover, ul.desktopmenyy li a:active, 
 ul.desktopmenyy li a:visited, ul.lang-selector li a, ul.lang-selector li a:hover,
 ul.lang-selector li a:visited, ul.lang-selector li a:active, .submenu li a,
@@ -85,7 +86,7 @@ ul.lang-selector{
 	color:#FFFFFF;
 	font-size:60px;
 }
-.header-sisuleht{
+.header-content-page{
 	background: url('../images/header-golf.jpg') 70% 53%;
 	background-size: cover;
 	width:100%;
@@ -94,7 +95,7 @@ ul.lang-selector{
 .desktop-logo{
 	width:230px;
 }
-.meist-wrapper, .golfeesti-wrapper, .kultuurireisid-wrapper, .golfikeskused-wrapper, .kontakt-wrapper{
+/*.meist-wrapper, .golfeesti-wrapper, .kultuurireisid-wrapper, .golfikeskused-wrapper, .kontakt-wrapper{
 	width:100%;
 		margin-bottom:40px;
 }
@@ -109,6 +110,7 @@ ul.lang-selector{
 .sisu-pilt{
 	width:100%;
 }
+*/
 .navi-wrapper{
 	position: absolute;
 	top:0px !important;
@@ -119,7 +121,7 @@ ul{
 }
 
 
-/*MENÜÜ*/
+/*MENU*/
 
 @media (min-width: 769px){
 	.navbar-desktop>li {
@@ -144,14 +146,17 @@ ul{
 		background: none;
 		border: none;
 	}
-
+	.navbar-default .navbar-nav > li > a {
+    color: #777;
+    font-size: 18px;
+	}
 	.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:visited {
 	    border: none;
 	    background: none;
 	}
 	.courses-img{
 		max-width: 300px;
-	  width: 100%;
+		width: 100%;
 	}
 @media(max-width:768px){
 	.footer-logo{
@@ -162,7 +167,7 @@ ul{
 		padding-right:0px !important;
 		padding-bottom: 10px;
 	}
-	.sisu-col-12{
+	.content-col-12{
 		    padding-right: 0px;
 	}
 	.nav-logo{
@@ -215,4 +220,12 @@ ul{
     width: 30px;
     position: absolute;
     left: 20px;
+}
+
+.btn-form-send, .btn-form-cancel{
+	float: right;
+}
+
+.btn-form-cancel{
+	margin-right: 10px;
 }

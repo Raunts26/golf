@@ -4,7 +4,7 @@
 		<?php if($page_file == "index.php"): ?>
 			<div class="header-desktop">
 		<?php else: ?>
-			<div class="header-sisuleht">
+			<div class="header-content-page">
 		<?php endif; ?>
 
 			<nav class="navbar navbar-default golf-navbar">

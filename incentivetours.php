@@ -22,8 +22,8 @@
 
 					<div class="col-xs-12 col-sm-8">
 
-					<div class="col-xs-12 sisu">
-						<div class="sisu" id="golf-and-culture-content">
+					<div class="col-xs-12">
+						<div  id="golf-and-culture-content">
               <h2><?=$page->title;?></h2>
 
               <div id="edit-area" class="input-group" style="display: none;">
@@ -35,7 +35,7 @@
               </div>
 
 
-				<div id="history-text" class="col-xs-12 sisu-col-12">
+				<div id="history-text" class="col-xs-12 content-col-12">
                 <div id="text-area">
 						  	  <?=$page->content;?>
                 </div>
@@ -66,7 +66,7 @@
                 </div>
 				</div>
 					</div>
-							<div class="sisu" id="book-a-tour-content" style="display:none">
+							<div id="book-a-tour-content" style="display:none">
 							<h2>Book a tour</h2>
 
 
@@ -114,8 +114,8 @@
 		      						<textarea class="form-control" rows="3"></textarea>
 		    						</div>
 									</div>
-									<button type="submit" class="btn btn-success" name="sendForm">Send</button>
-									<button type="button" class="btn btn-danger" name="cancelForm">Cancel</button> 
+									<button type="submit" class="btn btn-success btn-form-send" name="sendForm">Send</button>
+									<button type="button" class="btn btn-danger btn-form-cancel" name="cancelForm">Cancel</button> 
 								</form>
 							</div>
 						</div>
